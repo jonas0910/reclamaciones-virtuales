@@ -116,12 +116,12 @@ export default async function DashboardLayout({
               <span className="text-[9px] text-muted-foreground truncate uppercase">{profile.role}</span>
             </div>
           </div>
-          <Link href="/logout" className="w-full">
+          <a href="/logout" className="w-full">
             <Button variant="outline" className="w-full justify-start text-destructive hover:bg-destructive/10 hover:text-destructive hover:border-destructive/30 border-border/50 cursor-pointer">
               <LogOutIcon className="mr-2 size-4" data-icon="inline-start" />
               Cerrar Sesión
             </Button>
-          </Link>
+          </a>
         </div>
       </aside>
 
