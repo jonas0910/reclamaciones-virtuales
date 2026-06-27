@@ -15,6 +15,7 @@ import {
   LayersIcon
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { MobileSidebar } from "@/components/mobile-sidebar";
 
 export default async function DashboardLayout({
   children,
@@ -130,9 +131,7 @@ export default async function DashboardLayout({
         {/* Top Header - Mobile & Desktop Bar */}
         <header className="flex h-16 items-center justify-between px-6 border-b border-border/40 bg-card">
           <div className="flex items-center gap-4">
-            <Button variant="outline" size="icon" className="md:hidden cursor-pointer">
-              <MenuIcon className="size-5" />
-            </Button>
+            <MobileSidebar profile={profile} />
             <h1 className="font-semibold text-lg text-foreground md:block hidden">
               Libro de Reclamaciones Virtual
             </h1>
