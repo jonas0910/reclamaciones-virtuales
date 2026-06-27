@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MobileSidebar } from "@/components/mobile-sidebar";
+import { ChatAssistantBubble } from "@/components/chat-assistant-bubble";
 
 export default async function DashboardLayout({
   children,
@@ -149,6 +150,7 @@ export default async function DashboardLayout({
         <main className="flex-1 overflow-auto p-6 md:p-8">
           {children}
         </main>
+        <ChatAssistantBubble />
       </div>
     </div>
   );
